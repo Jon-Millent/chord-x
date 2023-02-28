@@ -8,7 +8,6 @@ import {
   NoteNearTypeSuper, PerfectNearType,
   UnknownNearType
 } from "@/plugins/music-tool/types";
-import {Language} from "nomoney/lib/core/types/currency-types";
 
 function checkDeg(needDeg: number, noteNumber: number) {
   let nearType = UnknownNearType
@@ -47,7 +46,7 @@ function checkDeg(needDeg: number, noteNumber: number) {
         nearType = PerfectNearType
       } else if (noteNumber === 3) {
         nearType = AbstractNearType
-      } else if (noteNumber === 25) {
+      } else if (noteNumber === 2) {
         nearType = DiminishedNearType
       }
       break
