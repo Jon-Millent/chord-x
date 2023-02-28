@@ -2,7 +2,8 @@ import {useEffect, useState} from "react";
 import {Form, message, Select} from "antd";
 import {BookItemFace, PianoConfig, UP} from "@/pages/config/book";
 import './index.less'
-import getTowNoteNear, {NoteNearFace} from "@/plugins/music-tool";
+import getTowNoteNear from "@/plugins/music-tool";
+import {NoteNearFace, UnknownNearType} from "@/plugins/music-tool/types";
 
 export default function IntervalPage () {
   const [form] = Form.useForm()
@@ -11,7 +12,8 @@ export default function IntervalPage () {
     deg: 0,
     des: "",
     noteNumber: 0,
-    title: ""
+    title: "",
+    nearType: UnknownNearType
   })
 
   const submit = async ()=> {
@@ -37,6 +39,7 @@ export default function IntervalPage () {
         <h1>结果：{result.title}</h1>
         <h2>间隔度数：{result.deg}</h2>
         <h2>间隔半音：{result.noteNumber}</h2>
+        <h2>关系：{result.nearType.label}</h2>
         <h2>备注：{result.des}</h2>
       </div>
       <div style={{width: '600px'}}>
