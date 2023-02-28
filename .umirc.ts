@@ -11,4 +11,11 @@ export default defineConfig({
     },
   ],
   npmClient: 'pnpm',
+  history: {
+    type: 'hash',
+  },
+  manifest: {
+    basePath: '/',
+  },
+  hash: true,
 });

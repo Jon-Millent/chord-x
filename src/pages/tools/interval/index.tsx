@@ -39,7 +39,7 @@ export default function IntervalPage () {
         <h1>结果：{result.title}</h1>
         <h2>间隔度数：{result.deg}</h2>
         <h2>间隔半音：{result.noteNumber}</h2>
-        <h2>关系：{result.nearType.label}</h2>
+        <h2>关系：{result.nearType.label} {result.nearType.en}</h2>
         <h2>备注：{result.des}</h2>
       </div>
       <div style={{width: '600px'}}>
@@ -61,6 +61,9 @@ export default function IntervalPage () {
                   return (
                     <Select.Option key={item.uniKey} value={item.uniKey}>
                       <div className="interval-cell" style={{display: 'flex', height: '100%'}}>
+                        <div className="interval-cell-item" style={{flex: '0 0 10px'}}>
+                          {item.group}
+                        </div>
                         <div className="interval-cell-item" style={{flex: '0 0 10px'}}>
                           {item.up ? UP : ' '}
                         </div>
@@ -97,6 +100,9 @@ export default function IntervalPage () {
                   return (
                     <Select.Option key={item.uniKey} value={item.uniKey}>
                       <div className="interval-cell" style={{display: 'flex'}}>
+                        <div className="interval-cell-item" style={{flex: '0 0 10px'}}>
+                          {item.group}
+                        </div>
                         <div className="interval-cell-item" style={{flex: '0 0 10px'}}>
                           {item.up ? UP : ''}
                         </div>

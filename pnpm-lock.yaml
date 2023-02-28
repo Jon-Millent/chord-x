@@ -4,11 +4,15 @@ specifiers:
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
   antd: ^5.2.3
+  nomoney: ^1.0.3
+  nzh: ^1.0.8
   typescript: ^4.1.2
   umi: ^4.0.53
 
 dependencies:
   antd: 5.2.3
+  nomoney: 1.0.3
+  nzh: 1.0.8
   umi: 4.0.53_c6mc5dj2lvpczaqlkcypbolpey
 
 devDependencies:
@@ -4859,6 +4863,10 @@ packages:
     resolution: {integrity: sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==}
     dev: false
 
+  /nomoney/1.0.3:
+    resolution: {integrity: sha512-ty0aLep6lBQ3Y+TWb2HqWzt/tp4sDC7y2vBKnKWXwAZSfJFeHl2spE1tsVyLkSq+uURXDqg9dhCe22bHkkArdg==}
+    dev: false
+
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
@@ -4880,6 +4888,10 @@ packages:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
     dependencies:
       boolbase: 1.0.0
+    dev: false
+
+  /nzh/1.0.8:
+    resolution: {integrity: sha512-fm9qlo0aBJxbi3dt4ix+iqRa95tAWAptwmSNTfUEleCitbTz8D3i7KPu0O2mecnvVn+b/JMb4uJqHOj2yJf3hQ==}
     dev: false
 
   /object-assign/4.1.1:

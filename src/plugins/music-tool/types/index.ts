@@ -11,31 +11,38 @@ export enum NoteNearType {
 export interface NoteNearTypeSuper {
   value: NoteNearType;
   label: string;
+  en: string;
 }
 
 export const UnknownNearType: NoteNearTypeSuper = {
   value: NoteNearType.unknown,
-  label: '未知'
+  label: '未知',
+  en: 'unknown'
 }
 export const PerfectNearType: NoteNearTypeSuper = {
   value: NoteNearType.perfect,
-  label: '纯'
+  label: '纯',
+  en: 'perfect'
 }
 export const MajorNearType: NoteNearTypeSuper = {
   value: NoteNearType.major,
-  label: '大'
+  label: '大',
+  en: 'Major'
 }
 export const MinorNearType: NoteNearTypeSuper = {
   value: NoteNearType.minor,
-  label: '小'
+  label: '小',
+  en: 'minor'
 }
 export const AbstractNearType: NoteNearTypeSuper = {
   value: NoteNearType.abstract,
-  label: '增'
+  label: '增',
+  en: 'abstract'
 }
 export const DiminishedNearType: NoteNearTypeSuper = {
   value: NoteNearType.diminished,
-  label: '减'
+  label: '减',
+  en: 'diminished'
 }
 export interface NoteNearFace {
   title: string;
