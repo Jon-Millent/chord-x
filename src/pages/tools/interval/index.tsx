@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {Form, message, Select} from "antd";
+import {Form, Select} from "antd";
 import {BookItemFace, PianoConfig, UP} from "@/pages/config/book";
 import './index.less'
 import getTowNoteNear from "@/plugins/music-tool";
@@ -16,9 +16,8 @@ export default function IntervalPage () {
     nearType: UnknownNearType
   })
 
-  const getHarfNoteNumber (num: number) => {
-    const full = parseInt(num)
-    return full * 2 + (num - full)
+  const getHalfNoteNumber = (num: number) => {
+    return num ? (num / 0.5) : ''
   }
 
   const submit = async ()=> {
@@ -44,7 +43,7 @@ export default function IntervalPage () {
         <h1>结果：{result.title}</h1>
         <h2>间隔度数：{result.deg}</h2>
         <h2>间隔音数：{result.noteNumber}</h2>
-        <h2>间隔半音数：{getHarfNoteNumber(result.noteNumber)}</h2>
+        <h2>间隔半音数：{getHalfNoteNumber(result.noteNumber)}</h2>
         <h2>关系：{result.nearType.label} {result.nearType.en}</h2>
         <h2>备注：{result.des}</h2>
       </div>
